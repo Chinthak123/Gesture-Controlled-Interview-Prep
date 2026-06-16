@@ -1,0 +1,130 @@
+{
+    "Data Analyst": [
+        {
+            "question": "You need to calculate a running total of sales across months in SQL. Which function should you use?",
+            "options": ["A. GROUP BY", "B. SUM() OVER (ORDER BY)", "C. ROLLUP", "D. CUBE"],
+            "answer": 2,
+            "explanation": "Using SUM() with an OVER() clause and ORDER BY creates a window function that calculates a cumulative running total row by row."
+        },
+        {
+            "question": "Your A/B test shows a p-value of 0.04. The alpha is set to 0.05. What is your conclusion?",
+            "options": ["A. Accept the null hypothesis", "B. Reject the null hypothesis", "C. Collect more data", "D. The test is inconclusive"],
+            "answer": 2,
+            "explanation": "Because the p-value of 0.04 is less than the alpha threshold of 0.05, the results are statistically significant, so you reject the null hypothesis."
+        },
+        {
+            "question": "In a pandas DataFrame, how do you handle missing values by filling them with the median of the column?",
+            "options": ["A. df.fillna(df.median())", "B. df.replace_na('median')", "C. df.dropna()", "D. df.fill_missing(method='median')"],
+            "answer": 1,
+            "explanation": "The fillna() method replaces NaN values. Passing df.median() calculates the median for the column and inserts it into the missing spots."
+        },
+        {
+            "question": "Which visual is best suited for showing the distribution of a single continuous variable?",
+            "options": ["A. Scatter Plot", "B. Line Chart", "C. Histogram", "D. Pie Chart"],
+            "answer": 3,
+            "explanation": "A histogram groups continuous data into bins, making it the standard choice for visualizing data distribution and identifying skewness."
+        },
+        {
+            "question": "What is the primary difference between a WHERE clause and a HAVING clause in SQL?",
+            "options": ["A. WHERE filters before aggregation", "B. HAVING is faster", "C. WHERE only works with text", "D. HAVING replaces GROUP BY"],
+            "answer": 1,
+            "explanation": "The WHERE clause is used to filter rows before any grouping occurs, while the HAVING clause filters the aggregated results after GROUP BY."
+        }
+    ],
+    "Data Scientist": [
+        {
+            "question": "You are building a medical diagnosis model where missing a sick patient is highly dangerous. Which metric should you optimize?",
+            "options": ["A. Precision", "B. Recall", "C. Accuracy", "D. Mean Squared Error"],
+            "answer": 2,
+            "explanation": "Recall minimizes False Negatives. In healthcare, missing a sick patient is worse than falsely diagnosing a healthy one, so Recall is prioritized."
+        },
+        {
+            "question": "Your Random Forest model is severely overfitting the training data. Which hyperparameter adjustment will help most?",
+            "options": ["A. Increase max_depth", "B. Decrease min_samples_split", "C. Decrease max_depth", "D. Increase the learning rate"],
+            "answer": 3,
+            "explanation": "Decreasing the max_depth limits how deep the decision trees can grow, preventing them from memorizing the noise in the training data."
+        },
+        {
+            "question": "What is the mathematical purpose of using the ReLU activation function in deep neural networks?",
+            "options": ["A. To output probabilities", "B. To mitigate the vanishing gradient problem", "C. To compress image size", "D. To regularize weights"],
+            "answer": 2,
+            "explanation": "ReLU does not squash positive values like Sigmoid or Tanh, which allows gradients to flow strongly backward through the network, mitigating vanishing gradients."
+        },
+        {
+            "question": "In Natural Language Processing, what problem does the TF-IDF algorithm solve compared to a simple Bag-of-Words?",
+            "options": ["A. It checks grammar", "B. It translates languages", "C. It penalizes words that appear too frequently across all documents", "D. It converts text to speech"],
+            "answer": 3,
+            "explanation": "TF-IDF reduces the weight of common words like 'the' or 'and', highlighting words that are uniquely important to a specific document."
+        },
+        {
+            "question": "You want to reduce the dimensionality of your dataset while retaining as much variance as possible. Which algorithm is appropriate?",
+            "options": ["A. K-Means", "B. Principal Component Analysis (PCA)", "C. DBSCAN", "D. Gradient Boosting"],
+            "answer": 2,
+            "explanation": "PCA linearly transforms the data into new, uncorrelated variables called principal components, ordered by the amount of variance they explain."
+        }
+    ],
+    "AI Engineer": [
+        {
+            "question": "In a Transformer model, what allows the network to process input words in parallel rather than sequentially?",
+            "options": ["A. Recurrent layers", "B. Self-Attention Mechanisms", "C. Convolutional filters", "D. Max Pooling"],
+            "answer": 2,
+            "explanation": "Self-attention looks at the entire sequence at once to determine the relationship between words, removing the need for sequential processing used in RNNs."
+        },
+        {
+            "question": "You are deploying a massive LLM to edge devices. Which technique is used to reduce the model's memory footprint?",
+            "options": ["A. Data Augmentation", "B. Quantization", "C. Fine-tuning", "D. Backpropagation"],
+            "answer": 2,
+            "explanation": "Quantization reduces the precision of the model's weights, dramatically lowering memory usage with minimal accuracy loss."
+        },
+        {
+            "question": "What is the primary role of the Discriminator in a Generative Adversarial Network (GAN)?",
+            "options": ["A. To generate new images", "B. To cluster data", "C. To classify inputs as either real or artificially generated", "D. To encode text"],
+            "answer": 3,
+            "explanation": "The Discriminator acts like an art critic, trying to distinguish between real data from the dataset and fake data produced by the Generator."
+        },
+        {
+            "question": "Which containerization tool is an industry standard for packaging AI models so they run reliably across different environments?",
+            "options": ["A. Jenkins", "B. Docker", "C. Git", "D. Postman"],
+            "answer": 2,
+            "explanation": "Docker packages the application and its dependencies into a container, ensuring it runs consistently anywhere."
+        },
+        {
+            "question": "When configuring a cloud GPU instance for distributed training, what does NVLink provide?",
+            "options": ["A. A code editor", "B. High-speed communication between multiple GPUs", "C. Cloud storage", "D. Auto-scaling rules"],
+            "answer": 2,
+            "explanation": "NVLink is a direct GPU-to-GPU interconnect that offers vastly higher bandwidth than a traditional PCIe bus, which is crucial for distributed deep learning."
+        }
+    ],
+    "Software Engineer": [
+        {
+            "question": "You need to store data where quick retrieval based on a unique key is the top priority. Which data structure is best?",
+            "options": ["A. Linked List", "B. Array", "C. Hash Table", "D. Stack"],
+            "answer": 3,
+            "explanation": "Hash Tables provide an average time complexity of O(1) for lookups, insertions, and deletions using a unique key."
+        },
+        {
+            "question": "In an object-oriented language, what principle ensures that a subclass can stand in for its parent class without breaking the application?",
+            "options": ["A. Liskov Substitution Principle", "B. Encapsulation", "C. Single Responsibility Principle", "D. Abstraction"],
+            "answer": 1,
+            "explanation": "The Liskov Substitution Principle dictates that objects of a superclass shall be replaceable with objects of its subclasses without breaking the application."
+        },
+        {
+            "question": "What is the defining characteristic of a Microservices architecture compared to a Monolith?",
+            "options": ["A. It uses only one database", "B. Services are loosely coupled and independently deployable", "C. It is written in a single language", "D. It runs on a single server"],
+            "answer": 2,
+            "explanation": "Microservices break an application into modular services that can be developed, tested, and deployed independently, communicating via APIs."
+        },
+        {
+            "question": "Which database property guarantees that a transaction is completely processed or not processed at all?",
+            "options": ["A. Consistency", "B. Isolation", "C. Atomicity", "D. Durability"],
+            "answer": 3,
+            "explanation": "Atomicity ensures that a database transaction is treated as a single unit, preventing partial updates if a crash occurs mid-transaction."
+        },
+        {
+            "question": "What is the worst-case time complexity of the QuickSort algorithm?",
+            "options": ["A. O(1)", "B. O(n log n)", "C. O(n^2)", "D. O(n)"],
+            "answer": 3,
+            "explanation": "While QuickSort is O(n log n) on average, its worst-case scenario is O(n^2), which happens if the pivot chosen is consistently the largest or smallest element."
+        }
+    ]
+}

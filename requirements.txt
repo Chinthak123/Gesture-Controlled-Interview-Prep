@@ -1,0 +1,4 @@
+streamlit
+opencv-python
+pyttsx3
+numpy
